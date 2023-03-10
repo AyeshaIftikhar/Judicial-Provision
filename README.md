@@ -1,4 +1,4 @@
-# Judicial-Provision
+# Judicial Provision
 
 The project Judicial Provision is an android application that contains all laws of Pakistan so that people can come and search for the laws for respective crime and we can say that it contains the law which are necessary for the citizens to know. The laws are categorized into different sections according to their respective keyword or policy. There is a facility to contact lawyers according to the nature of case. There is an option available to register case and also for requesting an enquiry/appeal. This project contains information of all the respective courts of an particular area. This project was build as a semester project and this repository includes all the documentation, data structure and a testing apk to give you the idea about how things works. 
 
