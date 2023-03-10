@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="135dp"
+        android:id="@+id/Del"
+        android:scaleType="fitXY"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/delete_data"/>
+
+    <EditText
+        android:id="@+id/deleteet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Del"
+        android:layout_marginTop="45dp"
+        android:hint="Enter the Law Number"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/deleteref"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteet"
+        android:layout_marginTop="30dp"
+        android:hint="Enter the Reference ID"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/deletebtn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteref"
+        android:layout_marginTop="43dp"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"/>
+
+</RelativeLayout>

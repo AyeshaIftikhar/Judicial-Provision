@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="130dp"
+        android:id="@+id/addRef"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_references_and_update_ref"
+        />
+
+    <EditText
+        android:id="@+id/referenceidetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addRef"
+        android:layout_marginTop="30dp"
+        android:hint="Reference ID"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/booketup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/referenceidetup"
+        android:layout_marginTop="10dp"
+        android:hint="Book"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/chapteretup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/booketup"
+        android:layout_marginTop="10dp"
+        android:hint="Chapter"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/pageetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapteretup"
+        android:layout_marginTop="10dp"
+        android:hint="Pageno"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/authornameetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pageetup"
+        android:layout_marginTop="10dp"
+        android:capitalize="words"
+        android:hint="Author Name"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/okbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Submit "
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:layout_below="@+id/authornameetup"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_button"/>
+
+</RelativeLayout>

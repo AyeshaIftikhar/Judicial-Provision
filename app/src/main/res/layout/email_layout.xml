@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/compose"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Compose"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:layout_below="@+id/compose"
+        android:id="@+id/textViewPhoneNo"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="To : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_below="@+id/textViewPhoneNo"
+        android:id="@+id/editTextTo"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="      ayeshaiftikhar822@gmail.com "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_below="@+id/editTextTo"
+        android:id="@+id/textViewSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject : "
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextSubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSubject"
+        android:capitalize="sentences"
+        android:hint="Subject"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+
+    <TextView
+        android:layout_below="@+id/editTextSubject"
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message : "
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMessage"
+        android:capitalize="sentences"
+        android:gravity="top"
+        android:hint="Body of your Message"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_below="@+id/editTextMessage"
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="Send"
+        android:textAlignment="center"
+        android:textColor="#f1f2f6"
+        android:textSize="20dp"
+        android:layout_marginRight="18dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+        <ImageView
+            android:id="@+id/contactphoto"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/contactphoto"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/phno"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/contactphoto"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            android:layout_below="@id/name"/>
+
+        <TextView
+            android:id="@+id/specialty"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="71dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/contactphoto"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textStyle="normal"
+            android:layout_below="@+id/phno"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:background="#4d3737"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="88dp"></View>
+
+
+
+</RelativeLayout>
+

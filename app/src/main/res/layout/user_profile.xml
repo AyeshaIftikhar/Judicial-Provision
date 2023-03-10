@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imgUser"
+        android:src="@drawable/user_profile_and_sigup"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnLaws"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgUser"
+        android:layout_marginTop="30dp"
+        android:text="Laws"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/btnCase"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLaws"
+        android:layout_marginTop="10dp"
+        android:text="Case"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/btnAppeal"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCase"
+        android:layout_marginTop="10dp"
+        android:text="Appeal"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/btnLawyer"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAppeal"
+        android:layout_marginTop="10dp"
+        android:text="Lawyers"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/btnSessionJudge"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLawyer"
+        android:layout_marginTop="10dp"
+        android:text="Session Judge"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSessionJudge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="logout"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

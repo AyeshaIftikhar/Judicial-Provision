@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:id="@+id/lawyerSignUp"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lawyer_profile_and_signup"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        />
+
+    <EditText
+        android:id="@+id/EdtxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lawyerSignUp"
+        android:layout_marginTop="15dp"
+        android:capitalize="words"
+        android:hint="Name"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/EtxtLNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdtxtName"
+        android:layout_marginTop="7dp"
+        android:hint="Lawyer Number"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edTxtphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EtxtLNo"
+        android:layout_marginTop="7dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtphone"
+        android:layout_marginTop="7dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edTxtadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtEmail"
+        android:layout_marginTop="7dp"
+        android:hint="Address"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/edTxtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTxtadd"
+        android:layout_marginTop="7dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/signup1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edTxtPass"
+        android:layout_marginTop="15dp"
+        android:text=" SignUp "
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

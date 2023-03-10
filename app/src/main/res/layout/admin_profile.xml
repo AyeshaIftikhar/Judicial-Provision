@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:id="@+id/appealForm"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+       android:src="@drawable/admin_profile"/>
+    <Button
+        android:id="@+id/lawcat"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appealForm"
+        android:layout_marginTop="15dp"
+        android:text="Insert Laws' Category"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"/>
+    <Button
+        android:id="@+id/lawSubCat"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lawcat"
+        android:layout_marginTop="07dp"
+        android:text="Sub Category"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"/>
+
+
+    <Button
+        android:id="@+id/insertedbtn"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lawSubCat"
+        android:layout_marginTop="07dp"
+        android:text="Insert Laws"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/deleteadbtn"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insertedbtn"
+        android:layout_marginTop="07dp"
+        android:text="Delete"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/updateadbtn"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteadbtn"
+        android:layout_marginTop="07dp"
+        android:text="Update"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/updateRef"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateadbtn"
+        android:layout_marginTop="07dp"
+        android:text="Update Reference"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/loggout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateRef"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/rounded_button"
+        android:text="  Logout  "
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addterminationDate"
+        android:src="@drawable/termination_date"
+        android:scaleType="fitXY"
+        />
+
+    <EditText
+        android:id="@+id/casenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addterminationDate"
+        android:layout_marginTop="30dp"
+        android:hint="Case Number"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/DateOfTermination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/casenumber"
+        android:layout_marginTop="10dp"
+        android:hint="Termination Date   DD-MM-YY"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/terminattionSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DateOfTermination"
+        android:layout_marginTop="10dp"
+        android:capitalize="sentences"
+        android:hint="termination Summary"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terminattionSummary"
+        android:layout_marginTop="30dp"
+       android:layout_centerHorizontal="true"
+        android:text=" Submit "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

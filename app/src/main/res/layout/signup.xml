@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:id="@+id/uper_image"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/signup"/>
+
+    <Button
+        android:id="@+id/users"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uper_image"
+        android:layout_marginTop="100dp"
+        android:text="User"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"
+       />
+
+    <Button
+        android:id="@+id/lawyer"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/users"
+        android:layout_marginTop="20dp"
+        android:text="Lawyer"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        />
+</RelativeLayout>

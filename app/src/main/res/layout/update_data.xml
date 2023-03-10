@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:id="@+id/inserttv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/update_data"/>
+
+    <EditText
+        android:id="@+id/lawidetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/inserttv"
+        android:hint="Law ID"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"/>
+
+
+    <EditText
+        android:id="@+id/lawnameetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lawidetup"
+        android:layout_marginTop="4dp"
+        android:capitalize="words"
+        android:hint="Law Name"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/subjectetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lawnameetup"
+        android:layout_marginTop="4dp"
+        android:capitalize="sentences"
+        android:hint="Subject"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/descriptionetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectetup"
+        android:layout_marginTop="4dp"
+        android:capitalize="sentences"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/conditionetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descriptionetup"
+        android:layout_marginTop="4dp"
+        android:hint="Condition"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"/>
+
+    <EditText
+        android:id="@+id/paneltyetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conditionetup"
+        android:layout_marginTop="4dp"
+        android:capitalize="sentences"
+        android:hint="Panelty"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/dateetup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paneltyetup"
+        android:layout_marginTop="4dp"
+        android:hint="Date DD-MM-YY"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal"/>
+
+    <Button
+        android:id="@+id/nextbtn1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateetup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:background="@drawable/rounded_button"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>

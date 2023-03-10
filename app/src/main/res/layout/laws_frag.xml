@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/law_frag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:capitalize="words"
+        android:text="Law"
+        android:textColor="#000000"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Code:"
+        android:layout_below="@+id/law_frag"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/law_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/law_frag"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/no"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Name:"
+        android:layout_below="@+id/law_no"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lawName"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/law_no"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/name"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:text="Subject:"
+        android:textStyle="bold"
+        android:layout_below="@+id/lawName"
+        android:textColor="#000000"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/law_subject"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/lawName"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/sub"
+        android:layout_marginLeft="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/law_subject"
+        android:textColor="#000000"
+        android:text="Description:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/law_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/law_subject"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/desc"
+        android:autoText="false"
+        android:capitalize="sentences"
+        android:freezesText="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:autoSizeMinTextSize="@android:dimen/app_icon_size"
+        tools:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/panelty"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/law_desc"
+        android:textColor="#000000"
+        android:text="Penalty:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/law_panelty"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/panelty"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/law_desc"
+        android:textColor="#000000"/>
+
+
+
+</RelativeLayout>

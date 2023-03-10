@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="90dp"
+        android:id="@+id/addCase"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/add_case"/>
+
+    <EditText
+        android:id="@+id/caseNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addCase"
+        android:layout_marginTop="20dp"
+        android:hint="Case NO"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/caseSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caseNo"
+        android:layout_marginTop="7dp"
+        android:hint="Subject"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/caseNature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caseSubject"
+        android:layout_marginTop="7dp"
+        android:hint="Nature of Case"
+        android:textColor="#000000"
+        android:textStyle="normal"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/caseDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caseNature"
+        android:layout_marginTop="7dp"
+        android:capitalize="sentences"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="100dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/caseDesc"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+
+
+</RelativeLayout>

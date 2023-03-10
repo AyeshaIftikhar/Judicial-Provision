@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f2f6">
+
+    <ImageView
+        android:id="@+id/lawyer_profile"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:src="@drawable/lawyer_profile_and_signup"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/addclient"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/lawyer_profile"
+        android:text="Add Client"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/addHearingDate"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addclient"
+        android:layout_marginTop="10dp"
+        android:text="Hearing Date"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/terminationDate"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addHearingDate"
+        android:layout_marginTop="10dp"
+        android:text="Termination Date"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded_button"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text=" Logout "
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:textColor="#f1f2f6"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@+id/terminationDate"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

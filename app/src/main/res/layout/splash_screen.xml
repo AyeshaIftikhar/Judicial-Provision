@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    tools:context="com.ayesha.judicial_provision.SplashScreen">
+<ImageView
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/jd_logo_one"
+    android:id="@+id/sp_scren"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_scren"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="As our Awarness grows,"
+        android:textSize="30dp"
+        android:id="@+id/txtquote"
+        android:textStyle="normal"
+        android:textColor="#F0D80E"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtquote"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="so we grow!"
+        android:textSize="30dp"
+        android:id="@+id/txtquote1"
+        android:textStyle="normal"
+        android:textColor="#F0D80E"/>
+
+
+</RelativeLayout>

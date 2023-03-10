@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ayesha.judicial_provision">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.telephony" android:required="true" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jd_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jd_logo"
+        android:supportsRtl="true"
+        android:backupAgent="MyBackupSpace"
+        android:theme="@style/JudicialProvision"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIN-dg-qhSQm_2aHpeM61v5Uk2D_sXfxUp8Dxt1Q" />
+
+        <activity android:name=".SplashScreen"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Front_Page" android:launchMode="singleInstance"/>
+        <activity android:name=".Login" android:launchMode="singleInstance"/>
+        <activity android:name=".SignUp" android:launchMode="singleInstance"/>
+        <activity android:name=".email_functionality" android:launchMode="singleInstance"/>
+        <activity android:name=".SmsActivity" android:launchMode="singleInstance"/>
+        <activity android:name=".Sms_feedBack" android:launchMode="singleInstance"/>
+        <activity android:name=".Email_feedBack" android:launchMode="singleInstance"/>
+
+        <activity android:name=".Admin_Portal.AddSubCategory" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.AddLawCategory" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.AddReference" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.AdminProfile" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.Delete" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.Insert" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.Insertref" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.Update" android:launchMode="singleInstance"/>
+        <activity android:name=".Admin_Portal.Updateref" android:launchMode="singleInstance"/>
+
+        <activity android:name=".User_Portal.Appeal" android:launchMode="singleInstance"/>
+        <activity android:name=".User_Portal.Cases" android:launchMode="singleInstance"/>
+        <activity android:name=".User_Portal.SessionJudge" android:launchMode="singleInstance"/>
+        <activity android:name=".User_Portal.UserPage" android:launchMode="singleInstance"/>
+        <activity android:name=".User_Portal.UserSignUp" android:launchMode="singleInstance"/>
+
+        <activity android:name=".Lawyers_Portal.addCase" android:launchMode="singleInstance"/>
+        <activity android:name=".Lawyers_Portal.AddClient" android:launchMode="singleInstance"/>
+        <activity android:name=".Lawyers_Portal.LawyersPage" android:launchMode="singleInstance"/>
+        <activity android:name=".Lawyers_Portal.lawyerSignUp"  android:launchMode="singleInstance"/>
+        <activity android:name=".Lawyers_Portal.Lawyerlistview"  android:launchMode="singleInstance"/>
+        <activity android:name=".Lawyers_Portal.HearingDate" android:launchMode="singleInstance" />
+        <activity android:name=".Lawyers_Portal.TerminationDate" android:launchMode="singleInstance"/>
+
+        <activity android:name=".Laws.Lawsportal" android:launchMode="singleInstance"/>
+        <activity android:name=".Laws.CyberLawsCategories" android:launchMode="singleInstance"/>
+        <activity android:name=".Laws.CivilLawsCategories" android:launchMode="singleInstance"/>
+        <activity android:name=".Laws.FemaleProtectionCategories" android:launchMode="singleInstance"/>
+
+        <activity android:name=".Cyber_Laws.Access_Info" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.access_info_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.Spamming" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.spamming_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.speech" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.speech_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.CyberLawsStalking" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.stalking_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.hacking" android:launchMode="singleInstance"/>
+        <activity android:name=".Cyber_Laws.hacking_frag" android:launchMode="singleInstance"/>
+
+        <activity android:name=".civil_laws.DishonestInvestigation" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.dishonest_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.offences" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.offence_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.forceUsage" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.force_usage_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.unlawfulLabour" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.labour_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.fraudulanent" android:launchMode="singleInstance"/>
+        <activity android:name=".civil_laws.fradulant_frag" android:launchMode="singleInstance"/>
+
+        <activity android:name=".female_protection.criminalForce" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.criminalForce_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.false_info" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.false_info_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.inducing" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.inducing_frag" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.prostitution" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.prostitution_buy" android:launchMode="singleInstance"/>
+        <activity android:name=".female_protection.prostitution_sell" android:launchMode="singleInstance"/>
+
+
+    </application>
+
+</manifest>
